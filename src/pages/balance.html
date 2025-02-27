@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Balance</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/modern-normalize.css" />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../fonts/fonts.css" />
+    <link rel="stylesheet" href="../css/main.css?v=2" />
+    <link rel="stylesheet" href="../css/balance.css" />
+  </head>
+  <body>
+    <header class="section header-section">
+      <div class="container header-container">
+        <div class="header-menu-button-wrap">
+          <button class="header-menu-button"><span></span></button>
+        </div>
+        <div>
+          <p class="header-user-id">#user_<span>id</span></p>
+        </div>
+        <div class="user-icon-wrap">
+          <img src="../img/svg/user-icon.svg" alt="User Icon" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section balance-section">
+        <div class="container r">
+          <div class="balance-wrap">
+            <h2 class="balance-heading">Total Balance</h2>
+            <div class="balance-value-wrap">
+              <span>$</span>
+              <span class="balance">0</span>
+              <button class="balance-button-eye">
+                <svg width="24" height="17">
+                  <use href="../img/svg/symbol-defs.svg#icon-eye" />
+                </svg>
+              </button>
+            </div>
+            <div class="balance-button-wrap">
+              <a class="primary-button deactive balance" href="">
+                <svg width="9" height="11">
+                  <use href="../img/svg/symbol-defs.svg#icon-arrow-up" />
+                </svg>
+                Send<span>Soon!</span>
+              </a>
+              <a class="primary-button deactive balance" href="">
+                <svg width="9" height="11">
+                  <use href="../img/svg/symbol-defs.svg#icon-arrow-up" />
+                </svg>
+                Get<span>Soon!</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section tokens-section">
+        <div class="container tokens-container">
+          <div class="tokens-heading-wrap">
+            <h2 class="tokens-heading">Tokens</h2>
+            <button class="tokens-history-button">History</button>
+          </div>
+          <div class="tokens-list-wrap hidden">
+            <ul class="tokens-list">
+              <li class="tokens-list-item">
+                <div>
+                  <img
+                    src="../img/tonkoin.png"
+                    width="32"
+                    height="32"
+                    alt="tonkoin"
+                  />
+                </div>
+                <div class="tokens-list-item-values-wrap">
+                  <div class="tokens-item-heading">
+                    <h4>Tonkoin</h4>
+                    <span>3,47</span>
+                  </div>
+                  <div class="tokens-item-summary">
+                    <span class="tokens-item-summary-price">$5,74</span>
+                    <span class="tokens-item-summary-status up">+3,65%</span>
+                    <span class="tokens-item-summary-sum">$19,98</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section history-section hidden">
+        <div class="container">
+          <div class="history-list-wrap">
+            <h2>26.02.25</h2>
+            <ul class="history-list">
+              <li class="history-list-item">
+                <div>
+                  <img
+                    src="../img/tonkoin.png"
+                    width="32"
+                    height="32"
+                    alt="tonkoin"
+                  />
+                </div>
+                <div class="history-item-heading">
+                  <h4>Tonkoin</h4>
+                  <span class="history-item-value">3,47</span>
+                  <span class="history-item-code">TON</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- -------------------MENU---------------- -->
+      <div class="menu">
+        <h2 class="menu-heading">Settings</h2>
+        <div class="menu-user-info-wrap">
+          <div class="menu-user-icon-wrap">
+            <img src="../img/svg/user-icon.svg" alt="User Icon" />
+          </div>
+          <div class="menu-user-content">
+            <div class="menu-user-text-wrap">
+              <h2 class="menu-user-title">#user_<span>id</span></h2>
+              <p class="menu-user-balance">0.00 NEAR | 0.00 TON</p>
+            </div>
+          </div>
+        </div>
+        <ul class="menu-setting-list">
+          <li class="menu-setting-item">
+            <div class="menu-setting-item-icon-wrap">
+              <img src="../img/svg/language.svg" alt="Language selection" />
+            </div>
+            <h3 class="menu-settings-item-heading">Language</h3>
+            <button type="button" id="lng-btn" class="menu-setting-item-button">
+              <svg width="9" height="9">
+                <use href="../img/svg/symbol-defs.svg#icon-down-arrow" />
+              </svg>
+            </button>
+          </li>
+          <li class="menu-setting-item">
+            <div class="menu-settings-item-icon-wrap">
+              <img src="../img/svg/inviter.svg" alt="" />
+            </div>
+            <h3 class="menu-settings-item-heading">Inviter</h3>
+            <button
+              type="button"
+              class="menu-settings-item-button"
+              id="inv-btn"
+            >
+              <svg width="9" height="9">
+                <use href="../img/svg/symbol-defs.svg#icon-down-arrow" />
+              </svg>
+            </button>
+          </li>
+          <li class="menu-setting-item">
+            <div class="menu-settings-item-icon-wrap">
+              <img src="../img/svg/logout.svg" alt="logout icon" />
+            </div>
+            <h3 class="menu-setting-item-heading">Logout</h3>
+            <a
+              href="../../index.html"
+              class="menu-settings-item-button"
+              id="logout-btn"
+            >
+              <svg width="9" height="9">
+                <use href="../img/svg/symbol-defs.svg#icon-down-arrow" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <!-- -------------------FOOTER---------------- -->
+    <footer class="footer">
+      <section class="section">
+        <div class="container">
+          <nav>
+            <ul class="footer-button-list">
+              <li class="footer-button-item">
+                <a
+                  class="footer-button-link close-history"
+                  href="./balance.html"
+                >
+                  <svg width="25" height="25">
+                    <use
+                      href="../img/svg/symbol-defs.svg#icon-first-page"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-button-item">
+                <a class="footer-button-link" href="./daily.html">
+                  <svg width="25" height="25">
+                    <use
+                      href="../img/svg/symbol-defs.svg#icon-second-page"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-button-item center active">
+                <a class="footer-button-link center" href="./we-pools.html">
+                  <svg width="35" height="35">
+                    <use
+                      href="../img/svg/symbol-defs.svg#icon-third-page"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-button-item fourth">
+                <a class="footer-button-link" href="./invite.html">
+                  <svg width="21" height="25">
+                    <use
+                      href="../img/svg/symbol-defs.svg#icon-fourth-page"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-button-item">
+                <a class="footer-button-link" href="./tasks.html">
+                  <svg width="25" height="28">
+                    <use
+                      href="../img/svg/symbol-defs.svg#icon-fifth-page"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </footer>
+    <!-- -------------------Inviter link wrap---------------- -->
+    <div class="inv-link-backdrop">
+      <div class="inv-link-wrap">
+        <h2 class="inv-heading">Recover Inviter</h2>
+        <p class="inv-desc">
+          You can link the account that invited you if this did not happen
+          automatically.
+        </p>
+        <form class="inv-form">
+          <label for="inviterInput">Inviter Code or Link</label>
+          <input type="text" class="inv-input" name="inputLink" />
+          <button type="submit" class="primary-button inv">Bind Inviter</button>
+        </form>
+      </div>
+      <p class="inv-notification">Recover Done!</p>
+    </div>
+    <!-- -------------------Loader---------------- -->
+    <div class="loader-wrap hidden">
+      <img src="../img/svg/loader.png" alt="Loader" />
+      <p>LOADING</p>
+    </div>
+  </body>
+  <script type="module" src="../js/user.js"></script>
+  <script type="module" src="../js/balance.js"></script>
+  <script type="module" src="../js/menu.js"></script>
+</html>
