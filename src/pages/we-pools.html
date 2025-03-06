@@ -62,7 +62,11 @@
                     <h4>TON</h4>
                     <span class="pools-item-heading-apr aprove">10% APR</span>
                     <span class="pools-item-heading-days">14 d</span>
-                    <button type="button" class="pools-item-heading-button">
+                    <button
+                      type="button"
+                      class="pools-item-heading-button"
+                      data-action="open-input"
+                    >
                       <svg width="9" height="9">
                         <use
                           href="../img/svg/symbol-defs.svg#icon-down-arrow"
@@ -86,6 +90,7 @@
                     <button
                       type="button"
                       class="pools-item-details-input-max-button"
+                      data-action="max-value"
                     >
                       Max
                     </button>
@@ -122,7 +127,11 @@
                     <h4>TON</h4>
                     <span class="pools-item-heading-apr aprove">10% APR</span>
                     <span class="pools-item-heading-days">14 d</span>
-                    <button type="button" class="pools-item-heading-button">
+                    <button
+                      type="button"
+                      class="pools-item-heading-button"
+                      data-action="open-input"
+                    >
                       <svg width="9" height="9">
                         <use
                           href="../img/svg/symbol-defs.svg#icon-down-arrow"
@@ -300,7 +309,13 @@
         <form class="inv-form">
           <label for="inviterInput">Inviter Code or Link</label>
           <input type="text" class="inv-input" name="inputLink" />
-          <button type="submit" class="primary-button inv">Bind Inviter</button>
+          <button
+            type="submit"
+            class="primary-button inv"
+            data-action="bindInviter"
+          >
+            Bind Inviter
+          </button>
         </form>
       </div>
       <p class="inv-notification">Recover Done!</p>
