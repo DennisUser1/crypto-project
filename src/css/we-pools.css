@@ -69,6 +69,7 @@
   opacity: 0;
   min-width: 100%;
   max-height: calc(100dvh - 337px);
+  overflow: scroll;
 }
 
 .my-pools-list {

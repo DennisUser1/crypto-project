@@ -74,7 +74,7 @@ function createDailyTasksMarkup(data) {
     return `
         <li class="tsk-list-item" style="transition-delay: ${delay}ms">
               <p class="tsk-item-name">${nameTask}</p>
-                <button type='button' class="tsk-item-btn" data-value='${value}'=>${buttonName}</button>
+              <button type='button' class="tsk-item-btn" data-value='${value}'=>${buttonName}</button>
         </li>
     `;
   });
@@ -84,21 +84,21 @@ function createDailyTasksMarkup(data) {
 // Animation UPGRADE notification and change WE Balance
 // I correct the positioning of the top using the height of the header, because the absolute positioning is not relative to the body, but relative to the main.
 
-const headerHight =
+const headerHeight =
   domElements.header.getBoundingClientRect().bottom -
   domElements.header.getBoundingClientRect().top;
-console.log(headerHight);
+console.log(headerHeight);
 
 function handleUpgrade(e) {
   let left = e.target.getBoundingClientRect().left;
-  let top = e.target.getBoundingClientRect().top - headerHight;
+  let top = e.target.getBoundingClientRect().top - headerHeight;
   domElements.upgradeNotification.style.left = left + "px";
   domElements.upgradeNotification.style.top = top + "px";
 
   const targetCoordinateY = -(
     top -
     domElements.weBalanceValue.getBoundingClientRect().top +
-    headerHight
+    headerHeight
   );
   const targetCoordinateX = -(
     left - domElements.weBalanceValue.getBoundingClientRect().left
@@ -137,13 +137,13 @@ function handleUpgrade(e) {
 function handleTasks(e) {
     if (e.target.type === 'button') {
         let left = e.target.getBoundingClientRect().left;
-        let top = e.target.getBoundingClientRect().top - headerHight;
-        domElements.tasksNotification.styles.left = left + 'px';
+        let top = e.target.getBoundingClientRect().top - headerHeight;
+        domElements.tasksNotification.style.left = left + 'px';
         domElements.tasksNotification.style.top = top + 'px';
         const targetCoordinateY = -(
             top -
             domElements.weBalanceValue.getBoundingClientRect().top + 
-            headerHight
+            headerHeight
         );
         const targetCoordinateX = -(
             left - domElements.weBalanceValue.getBoundingClientRect().left
