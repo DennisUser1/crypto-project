@@ -31,7 +31,7 @@ async function addMarkup() {
     domElements.doneTasksValue.innerHTML = sumDoneTasks(taskPageData);
     domElements.taskCategoryList.innerHTML = markupCategoryList;
     domElements.tasksCarousel.innerHTML = markupTasksCarousel;
-    domElements.headingSection.classList.add("show");
+    domElements.headingSection.classList.add("shown");
     domElements.taskCategorySection.classList.add("shown");
     domElements.taskSection.classList.add("shown");
   } catch (error) {
